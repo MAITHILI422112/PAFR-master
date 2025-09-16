@@ -47,8 +47,8 @@ def save_output(image_name, pred, d_dir):
 
 
 if __name__ == '__main__':
-    image_dir = './test_data/'
-    prediction_dir = './test_data/'
+    image_dir = '/kaggle/input/eorssd/test-images/'
+    prediction_dir = '/kaggle/input/eorssd/test-labels/'
     model_dir = './saved_models/premodel.pth'
 
     img_name_list = [image_dir + f for f in os.listdir(image_dir) if f.endswith('.jpg')]
